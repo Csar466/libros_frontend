@@ -11,7 +11,7 @@ import {
 import { ApiBearerAuth, ApiTags } from '@nestjs/swagger';
 import { libroService } from './libro.service';
 import { LibroActualizarEntrada, LibroEntrada } from './dto/libro.input.dto';
-import { AuthGuard } from 'src/auth/auth.guard';
+//import { AuthGuard } from 'src/auth/auth.guard';
 
 @ApiTags('Libros')
 @Controller()
