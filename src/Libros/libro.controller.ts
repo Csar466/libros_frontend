@@ -18,7 +18,7 @@ import { LibroActualizarEntrada, LibroEntrada } from './dto/libro.input.dto';
 export class libroController {
   constructor(private readonly libro: libroService) {}
   //@ApiBearerAuth()
- // @UseGuards(AuthGuard)
+  // @UseGuards(AuthGuard)
   @Post('Crear_registro_libro')
   crear(@Body() body: LibroEntrada) {
     return this.libro.crear(body);
