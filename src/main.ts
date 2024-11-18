@@ -10,20 +10,17 @@ async function bootstrap() {
   const configService = app.get(ConfigService);
 
   const config = new DocumentBuilder()
-    .setTitle('Paises ejemplo')
-    .setDescription('Los paises API description')
+    .setTitle('LIBROS')
+    .setDescription('Descripcion de API de Los libros')
     .setVersion('1.0')
-    .addTag('paises')
+    .addTag('Libros')
     .addBearerAuth()
     .build();
   const document = SwaggerModule.createDocument(app, config);
   SwaggerModule.setup('api', app, document);
 
   //app.useGlobalPipes(new ValidationPipe());
-
-  //const port = configService.get('port') ?? 3001;
   // const user = configService.get<string>('database.user');
-
   // ?? , ||
   const port = configService.get('port') ?? 3001;
   await app
