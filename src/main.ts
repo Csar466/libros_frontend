@@ -11,7 +11,7 @@ async function bootstrap() {
 
   const config = new DocumentBuilder()
     .setTitle('LIBROS')
-    .setDescription('Descripcion de API de Los libros')
+    .setDescription('Descripcion de API de libros')
     .setVersion('1.0')
     .addTag('Libros')
     .addBearerAuth()
